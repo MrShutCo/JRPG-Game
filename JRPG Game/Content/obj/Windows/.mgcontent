@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Tyer/Documents/Visual Studio 2015/Projects/JRPG Game/JRPG Game/Content/mainmenu.jpg</File>
+    <File>C:/Users/Tyer/Documents/Visual Studio 2015/Projects/JRPG Game/JRPG Game/Content/button.png</File>
+    <File>C:/Users/Tyer/Documents/Visual Studio 2015/Projects/JRPG Game/JRPG Game/Content/RexRules.png</File>
+    <File>C:/Users/Tyer/Documents/Visual Studio 2015/Projects/JRPG Game/JRPG Game/Content/Robot_R.png</File>
+    <File>C:/Users/Tyer/Documents/Visual Studio 2015/Projects/JRPG Game/JRPG Game/Content/Robot_D.png</File>
+    <File>C:/Users/Tyer/Documents/Visual Studio 2015/Projects/JRPG Game/JRPG Game/Content/Robot_L.png</File>
+    <File>C:/Users/Tyer/Documents/Visual Studio 2015/Projects/JRPG Game/JRPG Game/Content/Robot_U.png</File>
+    <File>C:/Users/Tyer/Documents/Visual Studio 2015/Projects/JRPG Game/JRPG Game/Content/me.png</File>
+  </SourceFiles>
+</SourceFileCollection>

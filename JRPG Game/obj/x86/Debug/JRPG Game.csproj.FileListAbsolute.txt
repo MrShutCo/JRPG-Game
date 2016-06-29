@@ -1,0 +1,33 @@
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\obj\x86\Debug\JRPG Game.csprojResolveAssemblyReference.cache
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\JRPG Game.exe
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\JRPG Game.pdb
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\MonoGame.Framework.dll
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.dll
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.XInput.dll
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.RawInput.dll
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\MonoGame.Framework.xml
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.xml
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.XInput.xml
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.RawInput.xml
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\obj\x86\Debug\JRPG Game.exe
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\obj\x86\Debug\JRPG Game.pdb
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\mainmenu.xnb
+c:\users\tyer\documents\visual studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\button.xnb
+C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\RexRules.xnb
+C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\Robot_D.xnb
+C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\Robot_L.xnb
+C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\Robot_R.xnb
+C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\Robot_U.xnb
+C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\me.xnb
