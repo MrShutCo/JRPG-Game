@@ -12,18 +12,15 @@ namespace JRPG_Game {
         public Texture2D Texture;
         public Vector2 Position;
         public Room Room;
-        int X;
-        int Y;
 
-        public GameObject(Texture2D texture, Room room, int x, int y) {
+        public GameObject(Texture2D texture, Vector2 position, Room room) {
             Texture = texture;
-            X = x;
-            Y = y;
+            Position = position;
             Room = room;
         }
 
         public void Draw(SpriteBatch spriteBatch) {
-            spriteBatch.Draw(Texture, new Vector2(X * Room.TilePixelSize, Y * Room.TilePixelSize), Color.White);
+            spriteBatch.Draw(Texture, new Vector2(Position.X, Position.Y), Color.White);
         }
 
         public virtual void Update(GameTime gameTime) {

@@ -7,21 +7,24 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace JRPG_Game {
-    class Tile {
+    public class Tile {
 
         //TODO: ADD a tilesheet and a room
         Room Room;
-        Texture2D Texture;
+        int tileType;
         int X;
         int Y;
 
-        public Tile(Room room, Texture2D texture) {
+        public Tile(Room room, int tiletype, int x, int y) {
             Room = room;
-            Texture = texture;
+            tileType = tiletype;
+            X = x;
+            Y = y;
         }
 
         public void Draw(SpriteBatch spriteBatch) {
-            spriteBatch.Draw(Texture, new Vector2(X * Room.TilePixelSize, Y * Room.TilePixelSize), Color.White);
+            if (tileType != -1)
+            spriteBatch.Draw(Room.TileSheets["world"].TextureSheet[tileType], new Vector2(X * Room.TilePixelSize, Y * Room.TilePixelSize), Color.White);
         }
 
 

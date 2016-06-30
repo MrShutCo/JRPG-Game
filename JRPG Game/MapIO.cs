@@ -41,28 +41,34 @@ namespace JRPG_Game {
 
                 }
                if (!collider) {
+                    int x = 0, y = 0;
+                    List<Tile> Tiles = new List<Tile>();
                     foreach (XmlNode tile in data) {
-                        tileLayout[counter] = Convert.ToInt32(tile.Attributes["gid"].Value) - 1;
-                        counter++;
+                        if (x >= width) {
+                            x = 0;
+                            y++;
+                        }
+                        Tiles.Add(new Tile(newRoom, Convert.ToInt32(tile.Attributes["gid"].Value) - 1, x, y));
+                        x++;
                     }
-                    TileLayer layer = new TileLayer(newRoom, tileLayout);
+                    TileLayer layer = new TileLayer(newRoom, Tiles);
                     newRoom.AddTileLayer(node.Attributes["name"].Value, layer);
                 }
                 else {
                     int x = 0, y = 0;
+                    List<Tile> Tiles = new List<Tile>();
                     foreach (XmlNode tile in data) {
-                        if (x >= width * 32) {
+                        if (x >= width) {
                             x = 0;
-                            y += 32;
+                            y++;
                         }
                         if (tile.Attributes["gid"].Value != "0") {
-                            newRoom.AddCollider(new Rectangle(x, y, x + 32, y + 32));
+                            newRoom.AddCollider(new Rectangle(x*32, y*32, (x*32) + 32,(y*32) + 32));
                         }
-                        x += 32;
-                        tileLayout[counter] = Convert.ToInt32(tile.Attributes["gid"].Value) - 1;
-                        counter++;
+                        Tiles.Add(new Tile(newRoom, Convert.ToInt32(tile.Attributes["gid"].Value) -1, x, y));
+                        x++;
                     }
-                    TileLayer layer = new TileLayer(newRoom, tileLayout);
+                    TileLayer layer = new TileLayer(newRoom, Tiles);
                     newRoom.AddTileLayer(node.Attributes["name"].Value, layer);
                 }
             }

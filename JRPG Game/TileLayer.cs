@@ -8,11 +8,11 @@ namespace JRPG_Game {
     public class TileLayer {
 
         public Room Room;
-        public int[] LayerContent;
+        public List<Tile> Tiles;
 
-        public TileLayer(Room room, int[] layerContent) {
+        public TileLayer(Room room, List<Tile> tiles) {
             Room = room;
-            LayerContent = layerContent;
+            Tiles = tiles;
         }
 
     }

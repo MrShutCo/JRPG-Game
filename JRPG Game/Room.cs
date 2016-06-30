@@ -29,7 +29,7 @@ namespace JRPG_Game {
             TileLayers = new Dictionary<string, TileLayer>();
             GameObjects = new List<GameObject>();
             CollisionLayer = new CollisionLayer(this);
-            Character = new Character(TexturePool.GetTexture("robot_l"), new Vector2(32,32),this);
+            Character = new Character(TexturePool.GetTexture("robot_l"), new Vector2(0,0),this);
             RoomWidth = width;
             RoomHeight = height;
             TilePixelSize = 32;
@@ -56,12 +56,15 @@ namespace JRPG_Game {
 
         public void Draw(SpriteBatch spriteBatch) {
             foreach (KeyValuePair<string, TileLayer> tl in TileLayers) {
-                RenderMapLayer(0, 0, tl.Value.LayerContent, RoomWidth, spriteBatch);
-            }
-            foreach(GameObject go in GameObjects) {
-                go.Draw(spriteBatch);
+                foreach (Tile t in tl.Value.Tiles) {
+                    t.Draw(spriteBatch);
+                }
             }
             Character.Draw(spriteBatch);
+            foreach (GameObject go in GameObjects) {
+                go.Draw(spriteBatch);
+            }
+            
         }
 
         public void Update(GameTime gameTime) {

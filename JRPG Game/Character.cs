@@ -18,7 +18,7 @@ namespace JRPG_Game {
         const float keyRepeatDelay = 0.35f;
 
         public Character(Texture2D texture, Vector2 position, Room room)
-            :base (texture,position,room)
+            :base (texture,position, room)
         {
             Speed = 1.5f;
             Velocity = Vector2.Zero;
@@ -30,7 +30,7 @@ namespace JRPG_Game {
                 if (keyboard.IsKeyDown(key)) {
                     if (lastKeyboard.IsKeyUp(key) || keyRepeatTime < 0) {
                         keyRepeatTime = keyRepeatDelay;
-                        Position += movement;
+                         Position += movement;
                         Camera.Pos = Position;
                     }
                     else {
