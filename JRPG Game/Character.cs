@@ -17,21 +17,21 @@ namespace JRPG_Game {
         float seconds;
         const float keyRepeatDelay = 0.35f;
 
-        public Character(Texture2D texture, Vector2 position, Room room)
-            :base (texture,position, room)
+        public Character(Texture2D texture, Room room, int x, int y)
+            :base (texture,room,x,y)
         {
             Speed = 1.5f;
             Velocity = Vector2.Zero;
         }
+        void KeyPressedDelay(Keys key, int xMove, int yMove) {
 
-        void KeyPressedDelay(Keys key, Vector2 movement) {
-
-            if (!CheckCollision(Position + movement)) {
+            if (!CheckCollision(X + xMove, Y + yMove)) {
                 if (keyboard.IsKeyDown(key)) {
                     if (lastKeyboard.IsKeyUp(key) || keyRepeatTime < 0) {
                         keyRepeatTime = keyRepeatDelay;
-                         Position += movement;
-                        Camera.Pos = Position;
+                        X += xMove;
+                        Y += yMove;
+                        //Camera.Pos = new Vector2(X * Room.TilePixelSize, Y * Room.TilePixelSize);
                     }
                     else {
                         keyRepeatTime -= seconds;
@@ -40,11 +40,9 @@ namespace JRPG_Game {
             }
         }
 
-        bool CheckCollision(Vector2 nextPos) {
-            foreach (Rectangle r in Room.CollisionLayer.CollisionRectangles) {
-                if (new Vector2(r.X,r.Y) == nextPos) {
-                    return true;
-                }
+        bool CheckCollision(int x, int y) {
+            if (Room.TileLayers["Collide"].TileLayout[x, y].TileType == TileType.collider) {
+                return true;
             }
             return false;
         }
@@ -54,14 +52,25 @@ namespace JRPG_Game {
             keyboard = Keyboard.GetState();
 
             seconds = (float)gameTime.ElapsedGameTime.TotalSeconds;
-            if (keyboard.IsKeyDown(Keys.Left)) Texture = TexturePool.GetTexture("robot_l");
-            if (keyboard.IsKeyDown(Keys.Right)) Texture = TexturePool.GetTexture("robot_r");
-            if (keyboard.IsKeyDown(Keys.Up)) Texture = TexturePool.GetTexture("robot_u");
-            if (keyboard.IsKeyDown(Keys.Down)) Texture = TexturePool.GetTexture("robot_d");
-            KeyPressedDelay(Keys.Left, new Vector2(-32, 0));
-            KeyPressedDelay(Keys.Right, new Vector2(32, 0));
-            KeyPressedDelay(Keys.Down, new Vector2(0, 32));
-            KeyPressedDelay(Keys.Up, new Vector2(0, -32));
+
+            //TODO: Clean up to proper input handling
+            if (keyboard.IsKeyDown(Keys.Left)) {
+                Texture = TexturePool.GetTexture("robot_l");
+                KeyPressedDelay(Keys.Left, -1, 0);
+            }
+            if (keyboard.IsKeyDown(Keys.Right)){
+                Texture = TexturePool.GetTexture("robot_r");
+                KeyPressedDelay(Keys.Right, 1, 0);
+            }
+            if (keyboard.IsKeyDown(Keys.Up)) {
+                Texture = TexturePool.GetTexture("robot_u");
+                KeyPressedDelay(Keys.Up, 0, -1);
+            }
+            if (keyboard.IsKeyDown(Keys.Down)) {
+                Texture = TexturePool.GetTexture("robot_d");
+                KeyPressedDelay(Keys.Down, 0, 1);
+            }
+            
         }
 
     }

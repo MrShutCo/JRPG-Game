@@ -31,3 +31,37 @@ C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Wind
 C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\Robot_R.xnb
 C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\Robot_U.xnb
 C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\me.xnb
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\button.xnb
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\mainmenu.xnb
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\me.xnb
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\RexRules.xnb
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\Robot_D.xnb
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\Robot_L.xnb
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\Robot_R.xnb
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\Robot_U.xnb
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\JRPG Game.exe
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\JRPG Game.pdb
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.RawInput.dll
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.RawInput.xml
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\obj\x86\Debug\JRPG Game.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\obj\x86\Debug\JRPG Game.exe
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\obj\x86\Debug\JRPG Game.pdb
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\TiledSharp.dll

@@ -14,11 +14,11 @@ namespace JRPG_Game {
 
         public int TilePixelSize;
 
+        public Dictionary<string, Tile[][]> RoomLayout;
+
         public Dictionary<string, TileLayer> TileLayers;
 
         public Dictionary<string, TileSheet> TileSheets;
-
-        public CollisionLayer CollisionLayer;
 
         public List<GameObject> GameObjects;
 
@@ -28,12 +28,13 @@ namespace JRPG_Game {
             TileSheets = new Dictionary<string, TileSheet>();
             TileLayers = new Dictionary<string, TileLayer>();
             GameObjects = new List<GameObject>();
-            CollisionLayer = new CollisionLayer(this);
-            Character = new Character(TexturePool.GetTexture("robot_l"), new Vector2(0,0),this);
+            Character = new Character(TexturePool.GetTexture("robot_l"),this, 1,1);
             RoomWidth = width;
             RoomHeight = height;
             TilePixelSize = 32;
         }
+
+
 
         public void AddTileSheet(string name, TileSheet tileSheet) {
             TileSheets[name] = tileSheet;
@@ -48,15 +49,11 @@ namespace JRPG_Game {
             GameObjects.Add(go);
         }
 
-        public void AddCollider(Rectangle rect) {
-            CollisionLayer.CollisionRectangles.Add(rect);
-        }
-
         //TODO: Maybe add a getter for accessing TileSheets and TileLayers
 
         public void Draw(SpriteBatch spriteBatch) {
             foreach (KeyValuePair<string, TileLayer> tl in TileLayers) {
-                foreach (Tile t in tl.Value.Tiles) {
+                foreach (Tile t in tl.Value.TileLayout) {
                     t.Draw(spriteBatch);
                 }
             }

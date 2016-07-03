@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Tyer/Documents/Visual Studio 2015/Projects/JRPG Game/JRPG Game/Content/Robot_U.png</SourceFile>
-  <SourceTime>2016-06-26T18:14:05.7575412-04:00</SourceTime>
-  <DestFile>C:/Users/Tyer/Documents/Visual Studio 2015/Projects/JRPG Game/JRPG Game/Content/bin/Windows/Robot_U.xnb</DestFile>
-  <DestTime>2016-06-26T18:15:07.2255394-04:00</DestTime>
+  <SourceFile>C:/Users/Mark/Documents/GitHub/JRPG-Game/JRPG Game/Content/Robot_U.png</SourceFile>
+  <SourceTime>2016-07-03T16:52:41.3889514-04:00</SourceTime>
+  <DestFile>C:/Users/Mark/Documents/GitHub/JRPG-Game/JRPG Game/Content/bin/Windows/Robot_U.xnb</DestFile>
+  <DestTime>2016-07-03T16:54:21.4095849-04:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2016-03-30T02:36:08-04:00</ImporterTime>
+  <ImporterTime>2016-03-15T22:18:04-04:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2016-03-30T02:36:08-04:00</ProcessorTime>
+  <ProcessorTime>2016-03-15T22:18:04-04:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>

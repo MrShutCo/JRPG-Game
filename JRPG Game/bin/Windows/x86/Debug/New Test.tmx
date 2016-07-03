@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" nextobjectid="17">
  <tileset firstgid="1" name="RexRules" tilewidth="32" tileheight="32" tilecount="171" columns="9">
-  <image source="../../../../../../../../../Pictures/RexRules.png" width="288" height="608"/>
+  <image source="../../../../Content/RexRules.png" width="288" height="608"/>
   <tile id="54">
    <properties>
     <property name="Collider" type="bool" value="true"/>
@@ -118,7 +118,7 @@
    <tile gid="0"/>
   </data>
  </layer>
- <layer name="Scenery" width="10" height="10">
+ <layer name="Collide" width="10" height="10">
   <properties>
    <property name="Collider" type="bool" value="true"/>
   </properties>

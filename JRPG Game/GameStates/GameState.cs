@@ -18,7 +18,7 @@ namespace JRPG_Game.GameStates {
             RoomManager.AddRoom("world map", MapIO.LoadRoom("New Test.tmx"));
             RoomManager.SetRoom("world map");
             RoomManager.CurrentRoom.AddTileSheet("world", TexturePool.GetTileSheet("testsheet"));
-            RoomManager.CurrentRoom.Character = new Character(TexturePool.GetTexture("robot_l"), new Vector2(64,64),RoomManager.CurrentRoom);
+            RoomManager.CurrentRoom.Character = new Character(TexturePool.GetTexture("robot_l"), RoomManager.CurrentRoom, 2, 2);
             Camera.Pos = new Vector2(128,128);
         }
 
