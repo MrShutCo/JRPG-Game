@@ -6,11 +6,13 @@
   <SourceFiles>
     <File>C:/Users/Mark/Documents/GitHub/JRPG-Game/JRPG Game/Content/mainmenu.jpg</File>
     <File>C:/Users/Mark/Documents/GitHub/JRPG-Game/JRPG Game/Content/button.png</File>
-    <File>C:/Users/Mark/Documents/GitHub/JRPG-Game/JRPG Game/Content/RexRules.png</File>
     <File>C:/Users/Mark/Documents/GitHub/JRPG-Game/JRPG Game/Content/Robot_R.png</File>
     <File>C:/Users/Mark/Documents/GitHub/JRPG-Game/JRPG Game/Content/Robot_D.png</File>
     <File>C:/Users/Mark/Documents/GitHub/JRPG-Game/JRPG Game/Content/Robot_L.png</File>
     <File>C:/Users/Mark/Documents/GitHub/JRPG-Game/JRPG Game/Content/Robot_U.png</File>
     <File>C:/Users/Mark/Documents/GitHub/JRPG-Game/JRPG Game/Content/me.png</File>
+    <File>C:/Users/Mark/Documents/GitHub/JRPG-Game/JRPG Game/Content/DialogueBox.png</File>
+    <File>C:/Users/Mark/Documents/GitHub/JRPG-Game/JRPG Game/Content/Main Font.spritefont</File>
+    <File>C:/Users/Mark/Documents/GitHub/JRPG-Game/JRPG Game/Content/World Tiles.png</File>
   </SourceFiles>
 </SourceFileCollection>

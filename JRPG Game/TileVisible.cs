@@ -18,7 +18,7 @@ namespace JRPG_Game {
 
         public void Draw(SpriteBatch spriteBatch) {
             if (tileType != -1)
-                spriteBatch.Draw(TexturePool.GetTileSheet("testsheet").TextureSheet[tileType], new Vector2(X * Room.TilePixelSize, Y * Room.TilePixelSize), Color.White);
+                spriteBatch.Draw(TexturePool.GetTileSheet("World Tiles").TextureSheet[tileType], new Vector2(X * Room.TilePixelSize, Y * Room.TilePixelSize), Color.White);
         }
 
     }

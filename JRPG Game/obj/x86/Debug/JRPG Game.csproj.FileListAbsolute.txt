@@ -65,3 +65,6 @@ C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\obj\x86\Debug\JRPG Game.cspro
 C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\obj\x86\Debug\JRPG Game.exe
 C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\obj\x86\Debug\JRPG Game.pdb
 C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\TiledSharp.dll
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\DialogueBox.xnb
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\Main Font.xnb
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\World Tiles.xnb

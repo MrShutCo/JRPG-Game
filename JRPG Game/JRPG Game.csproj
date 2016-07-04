@@ -40,6 +40,7 @@
   <ItemGroup>
     <Compile Include="Camera.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="DialogueBox.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="GameStates\EmptyState.cs" />
@@ -47,6 +48,7 @@
     <Compile Include="GameStates\MainMenuState.cs" />
     <Compile Include="GameStates\StateMachine.cs" />
     <Compile Include="GameStates\StateStack.cs" />
+    <Compile Include="InputHandler.cs" />
     <Compile Include="MapIO.cs" />
     <Compile Include="Menus\Button.cs" />
     <Compile Include="Program.cs" />

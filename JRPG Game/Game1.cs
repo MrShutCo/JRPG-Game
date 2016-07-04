@@ -2,6 +2,8 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
+using System.IO;
 
 namespace JRPG_Game {
     /// <summary>
@@ -46,13 +48,17 @@ namespace JRPG_Game {
             TexturePool.AddTexture("menuscreen", Content.Load<Texture2D>("mainmenu"));
             TexturePool.AddTexture("button", Content.Load<Texture2D>("button"));
 
+            TexturePool.AddTexture("dialogue", Content.Load<Texture2D>("DialogueBox"));
+
+            TexturePool.AddFont("dialogue_font", Content.Load<SpriteFont>("Main Font"));
 
             TexturePool.AddTexture("robot_l", Content.Load<Texture2D>("robot_l"));
             TexturePool.AddTexture("robot_r", Content.Load<Texture2D>("robot_r"));
             TexturePool.AddTexture("robot_u", Content.Load<Texture2D>("robot_u"));
             TexturePool.AddTexture("robot_d", Content.Load<Texture2D>("robot_d"));
 
-            TexturePool.AddTileSheet("testsheet",new TileSheet(GraphicsDevice, Content.Load<Texture2D>("RexRules"),32,32));
+            //ReadTileSheets();
+            TexturePool.AddTileSheet("World Tiles",new TileSheet(GraphicsDevice, Content.Load<Texture2D>("World Tiles"),32,32));
 
             gGameMode.Push("mainmenu");
             gGameMode.Push("gamestate");
@@ -60,7 +66,17 @@ namespace JRPG_Game {
             // TODO: use this.Content to load your game content here
         }
 
-        
+        public void ReadTileSheets() {
+            string[] sheets = Directory.GetFiles("../../../../tilesheets/", "*.png");
+            List<string> sheetss = new List<string>();
+            foreach (string s in sheets) {
+                sheetss.Add(s.TrimEnd('.', 'p', 'n', 'g'));
+            }
+            foreach (string s in sheets) {
+                
+                TexturePool.AddTileSheet(Path.GetFileName(s), new TileSheet(GraphicsDevice, Content.Load<Texture2D>(Path.GetFileName(s)),32,32));
+            }
+        }
 
         /// <summary>
         /// UnloadContent will be called once per game and is the place to unload

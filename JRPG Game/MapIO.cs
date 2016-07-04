@@ -23,11 +23,18 @@ namespace JRPG_Game {
             }
         }
 
+        
+
         public static void LoadRoom(string fileName) {
             var map = new TmxMap(fileName + ".tmx");
             int width = map.Width;
             int height = map.Height;
             Room newRoom = new Room(fileName, width, height);
+
+            foreach(TmxTileset tmxT in map.Tilesets) {
+                newRoom.AddTileSheet(tmxT.Name, TexturePool.GetTileSheet(tmxT.Name));
+            }
+
             foreach (TmxLayer tmxL in map.Layers) {
                 Tile[,] TileLayer = new Tile[width, height];
                 switch (tmxL.Name) {
