@@ -12,9 +12,9 @@ namespace JRPG_Game.GameStates {
         public StateStack stateStack { get; set; }
 
         public void OnEnter() {
-            RoomManager.CurrentRoom = MapIO.LoadRoom("New Test");
-            RoomManager.AddRoom(MapIO.LoadRoom("New Test"));
-            RoomManager.AddRoom(MapIO.LoadRoom("New Test2"));
+            
+            MapIO.ReadMapsFolder();
+            RoomManager.SetRoom("New Test1");
             RoomManager.CurrentRoom.AddTileSheet("world", TexturePool.GetTileSheet("testsheet"));
             RoomManager.CurrentRoom.Character = new Character(TexturePool.GetTexture("robot_l"), RoomManager.CurrentRoom, 2, 2);
             Camera.Pos = new Vector2(128,128);

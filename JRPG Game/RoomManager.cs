@@ -17,7 +17,6 @@ namespace JRPG_Game {
         }
 
         public static void SetRoom(string room) {
-            CurrentRoom.Character.Room = Rooms.Single(s => s.Name == room);
             CurrentRoom = Rooms.Single(s => s.Name == room);
         }
 

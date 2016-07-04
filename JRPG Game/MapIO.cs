@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,9 +12,18 @@ using TiledSharp;
 namespace JRPG_Game {
     public static class MapIO {
 
+        public static void ReadMapsFolder() {
+            string[] rooms = Directory.GetFiles("../../../../maps/", "*.tmx");
+            List<string> roomss = new List<string>();
+            foreach (string r in rooms) {
+                roomss.Add(r.TrimEnd('.', 't', 'm', 'x'));
+            }
+            foreach (string s in roomss) {
+                LoadRoom(s);
+            }
+        }
 
-        public static Room LoadRoom(string fileName) {
-            
+        public static void LoadRoom(string fileName) {
             var map = new TmxMap(fileName + ".tmx");
             int width = map.Width;
             int height = map.Height;
@@ -46,7 +56,8 @@ namespace JRPG_Game {
                 newRoom.AddTileLayer(tmxO.Name, new TileLayer(newRoom, TileLayer));
             }
             //Maybe change to Just add to RoomManager
-            return newRoom;
+            newRoom.Name = Path.GetFileName(newRoom.Name);
+            RoomManager.AddRoom(newRoom);
         }
     }
 }
