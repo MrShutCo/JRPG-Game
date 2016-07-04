@@ -55,8 +55,10 @@
     <Compile Include="RoomManager.cs" />
     <Compile Include="TexturePool.cs" />
     <Compile Include="Tile.cs" />
+    <Compile Include="TileTeleporter.cs" />
     <Compile Include="TileLayer.cs" />
     <Compile Include="TileSheet.cs" />
+    <Compile Include="TileVisible.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">

@@ -6,25 +6,26 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace JRPG_Game {
-    public class RoomManager {
+    public static class RoomManager {
 
-        public Dictionary<string, Room> Rooms;
+        static List<Room> Rooms = new List<Room>();
 
-        public Room CurrentRoom;
+        public static Room CurrentRoom;
 
-        public RoomManager() {
-            Rooms = new Dictionary<string, Room>();
+        public static void AddRoom(Room room) {
+            Rooms.Add(room);
         }
 
-        public void AddRoom(string name, Room room) {
-            Rooms[name] = room;
+        public static void SetRoom(string room) {
+            CurrentRoom.Character.Room = Rooms.Single(s => s.Name == room);
+            CurrentRoom = Rooms.Single(s => s.Name == room);
         }
 
-        public void SetRoom(string name) {
-            CurrentRoom = Rooms[name];
+        public static Room GetRoom(string room) {
+            return Rooms.Single(s => s.Name == room);
         }
 
-        public void Update(GameTime gameTime) {
+        public static void Update(GameTime gameTime) {
             CurrentRoom.Update(gameTime);
         }
 

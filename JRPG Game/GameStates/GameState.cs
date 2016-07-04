@@ -10,13 +10,11 @@ namespace JRPG_Game.GameStates {
     class GameState : IState {
 
         public StateStack stateStack { get; set; }
-        public RoomManager RoomManager;
-        public Room[] RoomList; //Maybe change, maybe keep?
 
         public void OnEnter() {
-            RoomManager = new RoomManager();
-            RoomManager.AddRoom("world map", MapIO.LoadRoom("New Test.tmx"));
-            RoomManager.SetRoom("world map");
+            RoomManager.CurrentRoom = MapIO.LoadRoom("New Test");
+            RoomManager.AddRoom(MapIO.LoadRoom("New Test"));
+            RoomManager.AddRoom(MapIO.LoadRoom("New Test2"));
             RoomManager.CurrentRoom.AddTileSheet("world", TexturePool.GetTileSheet("testsheet"));
             RoomManager.CurrentRoom.Character = new Character(TexturePool.GetTexture("robot_l"), RoomManager.CurrentRoom, 2, 2);
             Camera.Pos = new Vector2(128,128);

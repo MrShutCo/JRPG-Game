@@ -17,6 +17,7 @@ namespace JRPG_Game {
         float seconds;
         const float keyRepeatDelay = 0.35f;
 
+
         public Character(Texture2D texture, Room room, int x, int y)
             :base (texture,room,x,y)
         {
@@ -37,15 +38,23 @@ namespace JRPG_Game {
                         keyRepeatTime -= seconds;
                     }
                 }
+                TileTeleporter test = (TileTeleporter)Room.TileLayers["Events"].GetTileAt(X, Y);
+                if (test != null) {
+                    if (test.TileType == TileType.teleporter) {
+                        test.Teleport();
+                    }
+                }
             }
         }
 
         bool CheckCollision(int x, int y) {
-            if (Room.TileLayers["Collide"].TileLayout[x, y].TileType == TileType.collider) {
+            if (Room.TileLayers["Interact"].TileLayout[x, y].TileType == TileType.collider) {
                 return true;
             }
             return false;
         }
+
+
 
         public override void Update(GameTime gameTime) {
             lastKeyboard = keyboard;

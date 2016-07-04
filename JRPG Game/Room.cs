@@ -14,8 +14,6 @@ namespace JRPG_Game {
 
         public int TilePixelSize;
 
-        public Dictionary<string, Tile[][]> RoomLayout;
-
         public Dictionary<string, TileLayer> TileLayers;
 
         public Dictionary<string, TileSheet> TileSheets;
@@ -24,7 +22,9 @@ namespace JRPG_Game {
 
         public Character Character;
 
-        public Room(int width, int height) {
+        public string Name;
+
+        public Room(string name, int width, int height) {
             TileSheets = new Dictionary<string, TileSheet>();
             TileLayers = new Dictionary<string, TileLayer>();
             GameObjects = new List<GameObject>();
@@ -32,6 +32,7 @@ namespace JRPG_Game {
             RoomWidth = width;
             RoomHeight = height;
             TilePixelSize = 32;
+            Name = name;
         }
 
 
@@ -53,7 +54,7 @@ namespace JRPG_Game {
 
         public void Draw(SpriteBatch spriteBatch) {
             foreach (KeyValuePair<string, TileLayer> tl in TileLayers) {
-                foreach (Tile t in tl.Value.TileLayout) {
+                foreach (TileVisible t in tl.Value.TileLayout.OfType<TileVisible>()) {
                     t.Draw(spriteBatch);
                 }
             }
