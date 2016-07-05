@@ -12,6 +12,11 @@ namespace JRPG_Game {
         public Texture2D[] TextureSheet;
         public string name;
         GraphicsDevice GraphicsDevice;
+        public int GID;
+
+        public void SetGID(int gid) {
+            GID = gid;
+        }
 
         public TileSheet(GraphicsDevice graphics, Texture2D texturesheet, int xSize, int ySize) {
             GraphicsDevice = graphics;

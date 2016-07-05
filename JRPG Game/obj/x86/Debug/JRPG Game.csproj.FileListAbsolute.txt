@@ -68,3 +68,4 @@ C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\TiledSh
 C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\DialogueBox.xnb
 C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\Main Font.xnb
 C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\World Tiles.xnb
+C:\Users\Mark\Documents\GitHub\JRPG-Game\JRPG Game\bin\Windows\x86\Debug\Content\Objects.xnb

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" nextobjectid="2">
  <tileset firstgid="1" name="World Tiles" tilewidth="32" tileheight="32" tilecount="171" columns="9">
   <image source="../tilesheets/World Tiles.png" width="288" height="608"/>
+ </tileset>
+ <tileset firstgid="172" name="Objects" tilewidth="32" tileheight="32" tilecount="4" columns="4">
+  <image source="../tilesheets/Objects.png" width="128" height="32"/>
  </tileset>
  <layer name="Ground" width="10" height="10">
   <data>
@@ -136,7 +139,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="172"/>
    <tile gid="0"/>
    <tile gid="61"/>
    <tile gid="61"/>
@@ -211,5 +214,12 @@
    <tile gid="61"/>
   </data>
  </layer>
- <objectgroup name="Events"/>
+ <objectgroup name="Events">
+  <object id="1" x="224" y="64" width="32" height="32">
+   <properties>
+    <property name="Type" value="Readable"/>
+    <property name="text" value="This is a test for text"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>

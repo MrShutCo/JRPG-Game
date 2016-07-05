@@ -56,9 +56,9 @@ namespace JRPG_Game {
             TexturePool.AddTexture("robot_r", Content.Load<Texture2D>("robot_r"));
             TexturePool.AddTexture("robot_u", Content.Load<Texture2D>("robot_u"));
             TexturePool.AddTexture("robot_d", Content.Load<Texture2D>("robot_d"));
-
             //ReadTileSheets();
             TexturePool.AddTileSheet("World Tiles",new TileSheet(GraphicsDevice, Content.Load<Texture2D>("World Tiles"),32,32));
+            TexturePool.AddTileSheet("Objects", new TileSheet(GraphicsDevice, Content.Load<Texture2D>("Objects"), 32, 32));
 
             gGameMode.Push("mainmenu");
             gGameMode.Push("gamestate");

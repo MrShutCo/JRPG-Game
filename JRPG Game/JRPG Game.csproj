@@ -57,6 +57,8 @@
     <Compile Include="RoomManager.cs" />
     <Compile Include="TexturePool.cs" />
     <Compile Include="Tile.cs" />
+    <Compile Include="TileEvent.cs" />
+    <Compile Include="TileSign.cs" />
     <Compile Include="TileTeleporter.cs" />
     <Compile Include="TileLayer.cs" />
     <Compile Include="TileSheet.cs" />

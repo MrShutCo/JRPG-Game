@@ -12,13 +12,14 @@ namespace JRPG_Game {
         ground,
         collider,
         teleporter,
-        obj,
+        readable,
         other
     }
 
     public class Tile {
 
         //TODO: ADD a tilesheet and a room
+        
         protected Room Room;
         protected int X;
         protected int Y;
