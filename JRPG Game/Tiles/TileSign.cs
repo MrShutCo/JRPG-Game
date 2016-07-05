@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,8 +16,8 @@ namespace JRPG_Game {
         }
 
         public void LookAt() {
-            DialogueBox diaBox = new DialogueBox(TexturePool.GetTexture("dialogue"), Room, 0, 0, ReadableText);
-            Room.AddGameObject(diaBox);
+            DialogueBox diaBox = new DialogueBox(TexturePool.GetTexture("dialogue"), new Vector2(0,0), true, ReadableText);
+            GUIManager.GUIObjects["dialogue"] = diaBox;
         }
 
     }

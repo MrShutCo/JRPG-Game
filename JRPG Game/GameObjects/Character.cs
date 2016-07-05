@@ -68,13 +68,26 @@ namespace JRPG_Game {
 
         void InspectInFront() {
             TileSign Inspected = null;
+            int newX = X;
+            int newY = Y;
             switch (Direction) {
                 case EDirection.North:
-                    Inspected = (TileSign)Room.TileLayers["Events"].TileLayout[X, Y - 1];
-                    if (Inspected.TileType == TileType.readable) {
-                        Inspected.LookAt();
-                    }
+                    newY--;
                     break;
+                case EDirection.East:
+                    newX++;
+                    break;
+                case EDirection.West:
+                    newX--;
+                    break;
+                case EDirection.South:
+                    newY++;
+                    break;
+
+            }
+            Inspected = (TileSign)Room.TileLayers["Events"].TileLayout[newX,newY];
+            if (Inspected.TileType == TileType.readable) {
+                Inspected.LookAt();
             }
         }
 

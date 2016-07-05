@@ -28,6 +28,9 @@ namespace JRPG_Game.GameStates {
             spriteBatch.Begin(SpriteSortMode.Deferred,null,null,null,null,null,Camera.viewMatrix);
             RoomManager.CurrentRoom.Draw(spriteBatch);
             spriteBatch.End();
+            spriteBatch.Begin();
+            GUIManager.Draw(spriteBatch);
+            spriteBatch.End();
         }
 
         public void Update(GameTime gameTime) {
