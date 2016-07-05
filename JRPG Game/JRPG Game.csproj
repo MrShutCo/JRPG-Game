@@ -48,6 +48,7 @@
     <Compile Include="GameStates\MainMenuState.cs" />
     <Compile Include="GameStates\StateMachine.cs" />
     <Compile Include="GameStates\StateStack.cs" />
+    <Compile Include="GUIManager.cs" />
     <Compile Include="InputHandler.cs" />
     <Compile Include="MapIO.cs" />
     <Compile Include="Menus\Button.cs" />
@@ -56,13 +57,13 @@
     <Compile Include="Room.cs" />
     <Compile Include="RoomManager.cs" />
     <Compile Include="TexturePool.cs" />
-    <Compile Include="Tile.cs" />
-    <Compile Include="TileEvent.cs" />
-    <Compile Include="TileSign.cs" />
-    <Compile Include="TileTeleporter.cs" />
-    <Compile Include="TileLayer.cs" />
-    <Compile Include="TileSheet.cs" />
-    <Compile Include="TileVisible.cs" />
+    <Compile Include="Tiles\Tile.cs" />
+    <Compile Include="Tiles\TileEvent.cs" />
+    <Compile Include="Tiles\TileSign.cs" />
+    <Compile Include="Tiles\TileTeleporter.cs" />
+    <Compile Include="Tiles\TileLayer.cs" />
+    <Compile Include="Tiles\TileSheet.cs" />
+    <Compile Include="Tiles\TileVisible.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">

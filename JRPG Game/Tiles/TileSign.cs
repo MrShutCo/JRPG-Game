@@ -15,7 +15,8 @@ namespace JRPG_Game {
         }
 
         public void LookAt() {
-            DialogueBox diaBox = new DialogueBox(ReadableText);
+            DialogueBox diaBox = new DialogueBox(TexturePool.GetTexture("dialogue"), Room, 0, 0, ReadableText);
+            Room.AddGameObject(diaBox);
         }
 
     }
