@@ -1,0 +1,32 @@
+﻿<Window x:Class="JRPG_Creator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JRPG_Creator"
+        mc:Ignorable="d"
+        Title="JRPG Content Creator" Height="600" Width="800">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="375" Margin="35,35,0,0" VerticalAlignment="Top" Width="225">
+
+        </Border>
+        <Label x:Name="label" Content="   Enemy Creator" HorizontalAlignment="Left" Margin="83,4,0,0" VerticalAlignment="Top" Width="125"/>
+        <TextBox x:Name="EnemyName" HorizontalAlignment="Left" Height="31" Margin="111,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132" TextChanged="EnemyName_TextChanged"/>
+        <Label x:Name="name" Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,54,0,0"/>
+        <TextBox x:Name="EnemyHP" HorizontalAlignment="Left" Height="31" Margin="111,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132" TextChanged="EnemyHP_TextChanged"/>
+        <TextBox x:Name="EnemyMP" HorizontalAlignment="Left" Height="31" Margin="111,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132" TextChanged="EnemyMP_TextChanged"/>
+        <TextBox x:Name="EnemyAtk" HorizontalAlignment="Left" Height="31" Margin="111,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132" TextChanged="EnemyAtk_TextChanged"/>
+        <TextBox x:Name="EnemyDef" HorizontalAlignment="Left" Height="31" Margin="111,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132" TextChanged="EnemyDef_TextChanged"/>
+        <TextBox x:Name="EnemySpd" HorizontalAlignment="Left" Height="31" Margin="111,231,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132" TextChanged="EnemySpd_TextChanged"/>
+        <TextBox x:Name="EnemyXp" HorizontalAlignment="Left" Height="31" Margin="111,303,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132" TextChanged="EnemyXp_TextChanged"/>
+        <TextBox x:Name="EnemyGold" HorizontalAlignment="Left" Height="31" Margin="111,267,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132" TextChanged="EnemyGold_TextChanged"/>
+        <Label x:Name="name_Copy" Content="HP" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,91,0,0"/>
+        <Label x:Name="name_Copy1" Content="MP" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,128,0,0"/>
+        <Label x:Name="name_Copy2" Content="Atk" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,164,0,0"/>
+        <Label x:Name="name_Copy3" Content="Def" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="54,198,0,0"/>
+        <Label x:Name="name_Copy4" Content="Spd" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,235,0,0"/>
+        <Label x:Name="name_Copy5" Content="Gold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,270,0,0" RenderTransformOrigin="0.567,2.269"/>
+        <Label x:Name="name_Copy6" Content="XP" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,305,0,0" RenderTransformOrigin="0.567,2.269"/>
+        <Button x:Name="CreateEnemy" Content="Create" HorizontalAlignment="Left" Height="38" Margin="91,355,0,0" VerticalAlignment="Top" Width="117" Click="CreateEnemy_Click"/>
+    </Grid>
+</Window>

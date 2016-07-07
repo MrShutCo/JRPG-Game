@@ -38,8 +38,11 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Battle\Entity.cs" />
+    <Compile Include="Battle\IAction.cs" />
     <Compile Include="GameObjects\Camera.cs" />
     <Compile Include="GameObjects\Character.cs" />
+    <Compile Include="GameStates\BattleState.cs" />
     <Compile Include="GUI Objects\DialogueBox.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GameObjects\GameObject.cs" />

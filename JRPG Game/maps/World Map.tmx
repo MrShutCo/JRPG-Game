@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" nextobjectid="1">
+ <properties>
+  <property name="Encounters" type="bool" value="true"/>
+  <property name="Enemy" value="goblin"/>
+ </properties>
  <tileset firstgid="1" name="World Tiles" tilewidth="32" tileheight="32" tilecount="171" columns="9">
   <image source="../tilesheets/World Tiles.png" width="288" height="608"/>
  </tileset>

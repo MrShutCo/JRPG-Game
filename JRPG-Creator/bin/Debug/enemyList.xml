@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enemies>
+  <enemy Name="Goblin" HP="100" MP="10" Atk="10" Def="10" Spd="10" Gold="10" XP="10" />
+</enemies>
