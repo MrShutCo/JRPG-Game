@@ -28,7 +28,7 @@ namespace JRPG_Game {
             TileSheets = new Dictionary<string, TileSheet>();
             TileLayers = new Dictionary<string, TileLayer>();
             GameObjects = new List<GameObject>();
-            Character = new Character(TexturePool.GetTexture("robot_l"),this, 1,1);
+            //Character = new Character(TexturePool.GetTexture("robot_l"),this, 1,1);
             RoomWidth = width;
             RoomHeight = height;
             TilePixelSize = 32;
@@ -58,6 +58,7 @@ namespace JRPG_Game {
                     t.Draw(spriteBatch);
                 }
             }
+            if (Character != null)
             Character.Draw(spriteBatch);
             foreach (GameObject go in GameObjects) {
                 go.Draw(spriteBatch);
@@ -66,7 +67,7 @@ namespace JRPG_Game {
         }
 
         public void Update(GameTime gameTime) {
-            foreach(GameObject go in GameObjects) {
+            foreach (GameObject go in GameObjects) {
                 go.Update(gameTime);
             }
             Character.Update(gameTime);

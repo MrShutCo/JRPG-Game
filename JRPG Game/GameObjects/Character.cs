@@ -21,6 +21,7 @@ namespace JRPG_Game {
         public Vector2 Velocity;
         public float Speed;
         KeyboardState keyboard, lastKeyboard;
+        public InputHandler InputHandler;
 
         public EDirection Direction;
 
@@ -35,26 +36,30 @@ namespace JRPG_Game {
             Speed = 1.5f;
             Velocity = Vector2.Zero;
             Direction = EDirection.East;
+            InputHandler = new InputHandler();
+            InputHandler.RegisterKey(Keys.Left, moveLeft);
+            InputHandler.RegisterKey(Keys.Right, moveRight);
+            InputHandler.RegisterKey(Keys.Up, moveUp);
+            InputHandler.RegisterKey(Keys.Down, moveDown);
+            InputHandler.RegisterKey(Keys.Enter, InspectInFront);
         }
         void KeyPressedDelay(Keys key, int xMove, int yMove) {
 
             if (!CheckCollision(X + xMove, Y + yMove)) {
-                if (keyboard.IsKeyDown(key)) {
-                    if (lastKeyboard.IsKeyUp(key) || keyRepeatTime < 0) {
-                        keyRepeatTime = keyRepeatDelay;
-                        X += xMove;
-                        Y += yMove;
-                        Camera.Pos = new Vector2(X * Room.TilePixelSize, Y * Room.TilePixelSize);
-                    }
-                    else {
-                        keyRepeatTime -= seconds;
-                    }
+                if (InputHandler.KeyPressed(key) || keyRepeatTime < 0) {
+                    keyRepeatTime = keyRepeatDelay;
+                    X += xMove;
+                    Y += yMove;
+                    Camera.Pos = new Vector2(X * Room.TilePixelSize, Y * Room.TilePixelSize);
                 }
-                TileTeleporter test = (TileTeleporter)Room.TileLayers["Events"].GetTileAt(X, Y);
-                if (test != null) {
-                    if (test.TileType == TileType.teleporter) {
-                        test.Teleport();
-                    }
+                else {
+                    keyRepeatTime -= seconds;
+                }
+            }
+            TileTeleporter test = (TileTeleporter)Room.TileLayers["Events"].GetTileAt(X, Y);
+            if (test != null) {
+                if (test.TileType == TileType.teleporter) {
+                    test.Teleport(this);
                 }
             }
         }
@@ -86,40 +91,44 @@ namespace JRPG_Game {
 
             }
             Inspected = (TileSign)Room.TileLayers["Events"].TileLayout[newX,newY];
+            if (Inspected != null)
             if (Inspected.TileType == TileType.readable) {
                 Inspected.LookAt();
             }
         }
 
-        public override void Update(GameTime gameTime) {
-            lastKeyboard = keyboard;
-            keyboard = Keyboard.GetState();
+        public void moveLeft() {
+            Direction = EDirection.West;
+            Texture = TexturePool.GetTexture("robot_l");
+            KeyPressedDelay(Keys.Left, -1, 0);
+        }
 
+        public void moveRight() {
+            Direction = EDirection.East;
+            Texture = TexturePool.GetTexture("robot_r");
+            KeyPressedDelay(Keys.Right, 1, 0);
+        }
+
+        public void moveUp() {
+            Direction = EDirection.North;
+            Texture = TexturePool.GetTexture("robot_u");
+            KeyPressedDelay(Keys.Up, 0, -1);
+        }
+
+        public void moveDown() {
+            Direction = EDirection.South;
+            Texture = TexturePool.GetTexture("robot_d");
+            KeyPressedDelay(Keys.Down, 0, 1);
+        }
+
+
+        public override void Update(GameTime gameTime) {
+            InputHandler.Update(gameTime);
             seconds = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
             //TODO: Clean up to proper input handling
             if (keyboard.IsKeyDown(Keys.Enter)) {
-                InspectInFront();
-            }
-            if (keyboard.IsKeyDown(Keys.Left)) {
-                Direction = EDirection.West;
-                Texture = TexturePool.GetTexture("robot_l");
-                KeyPressedDelay(Keys.Left, -1, 0);
-            }
-            if (keyboard.IsKeyDown(Keys.Right)){
-                Direction = EDirection.East;
-                Texture = TexturePool.GetTexture("robot_r");
-                KeyPressedDelay(Keys.Right, 1, 0);
-            }
-            if (keyboard.IsKeyDown(Keys.Up)) {
-                Direction = EDirection.North;
-                Texture = TexturePool.GetTexture("robot_u");
-                KeyPressedDelay(Keys.Up, 0, -1);
-            }
-            if (keyboard.IsKeyDown(Keys.Down)) {
-                Direction = EDirection.South;
-                Texture = TexturePool.GetTexture("robot_d");
-                KeyPressedDelay(Keys.Down, 0, 1);
+                //InspectInFront();
             }
             
         }

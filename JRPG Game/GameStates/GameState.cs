@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
 namespace JRPG_Game.GameStates {
     class GameState : IState {
@@ -16,6 +17,7 @@ namespace JRPG_Game.GameStates {
             RoomManager.SetRoom("New Test1");
             RoomManager.CurrentRoom.Character = new Character(TexturePool.GetTexture("robot_l"), RoomManager.CurrentRoom, 2, 2);
             Camera.Pos = new Vector2(128,128);
+            
         }
 
         public void OnExit() {
@@ -34,6 +36,7 @@ namespace JRPG_Game.GameStates {
         }
 
         public void Update(GameTime gameTime) {
+            
             RoomManager.CurrentRoom.Update(gameTime);
         }
     }

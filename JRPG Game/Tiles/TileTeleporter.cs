@@ -20,10 +20,13 @@ namespace JRPG_Game {
             DestY = destY;
         }
 
-        public void Teleport() {
+        public void Teleport(Character car) {
+            
+            //RoomManager.CurrentRoom.Character.Room = RoomManager.CurrentRoom;
+            //RoomManager.ClearRoom();
             RoomManager.SetRoom(destName);
-            RoomManager.CurrentRoom.Character.X = DestX;
-            RoomManager.CurrentRoom.Character.Y = DestY;
+            RoomManager.CurrentRoom.Character = new Character(car.Texture, RoomManager.CurrentRoom, DestX, DestY);
+
         }
 
     }

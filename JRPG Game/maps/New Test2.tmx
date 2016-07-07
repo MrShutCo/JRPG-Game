@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" nextobjectid="2">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" nextobjectid="4">
  <tileset firstgid="1" name="World Tiles" tilewidth="32" tileheight="32" tilecount="171" columns="9">
   <image source="../tilesheets/World Tiles.png" width="288" height="608"/>
  </tileset>
@@ -206,7 +206,7 @@
    <tile gid="61"/>
    <tile gid="61"/>
    <tile gid="61"/>
-   <tile gid="61"/>
+   <tile gid="0"/>
    <tile gid="61"/>
    <tile gid="61"/>
    <tile gid="61"/>
@@ -219,6 +219,14 @@
    <properties>
     <property name="Type" value="Readable"/>
     <property name="text" value="This is a test for text"/>
+   </properties>
+  </object>
+  <object id="3" x="128" y="288" width="32" height="32">
+   <properties>
+    <property name="Type" value="Teleporter"/>
+    <property name="X" value="16"/>
+    <property name="Y" value="10"/>
+    <property name="room" value="World Map"/>
    </properties>
   </object>
  </objectgroup>

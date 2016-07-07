@@ -16,6 +16,10 @@ namespace JRPG_Game {
             Rooms.Add(room);
         }
 
+        public static void ClearRoom() {
+            CurrentRoom = null;
+        }
+
         public static void SetRoom(string room) {
             CurrentRoom = Rooms.Single(s => s.Name == room);
         }
