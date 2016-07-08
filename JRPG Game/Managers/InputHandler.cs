@@ -38,7 +38,7 @@ namespace JRPG_Game {
         public  void Update(GameTime gameTime) {
             UpdateKey();
             foreach (KeyValuePair<Keys, Action> mapping in KeyMappings) {
-                 if (keyboardState.IsKeyDown(mapping.Key))
+                 if (KeyPressed(mapping.Key))
                  mapping.Value();
             }
             UpdateLastKey();

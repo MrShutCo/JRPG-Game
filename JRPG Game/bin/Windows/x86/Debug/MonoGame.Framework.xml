@@ -8838,7 +8838,7 @@
         </member>
         <member name="T:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64">
             <summary>
-            Packed vector type containing four 16-bit unsigned normalized values ranging from 0 to 1. 
+            Packed vector type containing four 16-bit unsigned normalized values ranging from 0 to 1.
             </summary>
         </member>
         <member name="M:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.#ctor(System.Single,System.Single,System.Single,System.Single)">

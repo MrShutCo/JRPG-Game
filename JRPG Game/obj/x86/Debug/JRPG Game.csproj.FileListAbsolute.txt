@@ -107,3 +107,8 @@ C:\Users\Mark\Desktop\JRPG-Game-master\JRPG Game\bin\Windows\x86\Debug\SharpDX.X
 C:\Users\Mark\Desktop\JRPG-Game-master\JRPG Game\bin\Windows\x86\Debug\SharpDX.RawInput.xml
 C:\Users\Mark\Desktop\JRPG-Game-master\JRPG Game\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
 C:\Users\Mark\Desktop\JRPG-Game-master\JRPG Game\obj\x86\Debug\JRPG Game.csprojResolveAssemblyReference.cache
+C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\DialogueBox.xnb
+C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\Main Font.xnb
+C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\Objects.xnb
+C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\World Tiles.xnb
+C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\TiledSharp.dll

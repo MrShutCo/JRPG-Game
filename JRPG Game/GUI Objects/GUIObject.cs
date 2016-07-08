@@ -13,16 +13,14 @@ namespace JRPG_Game.GUI_Objects {
         public Vector2 Position;
         public bool IsShowing;
 
-        public GUIObject(Texture2D texture, Vector2 position, bool isShowing) {
-            Texture = texture;
-            Position = position;
-            IsShowing = isShowing;
+        public GUIObject() {
+        }
+
+        public void StopShowing() {
+            IsShowing = false;
         }
 
         public virtual void Draw(SpriteBatch spriteBatch) {
-            if (IsShowing) {
-                spriteBatch.Draw(Texture, Position, Color.White);
-            }
         }
 
     }

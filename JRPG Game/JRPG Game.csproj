@@ -43,6 +43,7 @@
     <Compile Include="GameObjects\Camera.cs" />
     <Compile Include="GameObjects\Character.cs" />
     <Compile Include="GameStates\BattleState.cs" />
+    <Compile Include="GUI Objects\Conversation.cs" />
     <Compile Include="GUI Objects\DialogueBox.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GameObjects\GameObject.cs" />

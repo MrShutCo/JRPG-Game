@@ -89,7 +89,13 @@ namespace JRPG_Game {
                                     TileLayer[(int)obj.X / 32, (int)obj.Y / 32] = new TileTeleporter(newRoom, obj.Properties["room"], (int)obj.X / 32, (int)obj.Y / 32, Convert.ToInt32(obj.Properties["X"]), Convert.ToInt32(obj.Properties["Y"]), TileType.teleporter);
                                     break;
                                 case "Readable":
-                                    TileLayer[(int)obj.X / 32, (int)obj.Y / 32] = new TileSign(newRoom, obj.Properties["text"], (int)obj.X / 32, (int)obj.Y / 32, TileType.readable);
+                                    List<string> text = new List<string>();
+                                    for (int i = 0; i < 10; i++) {
+                                        if (obj.Properties.ContainsKey("text" + i.ToString())) {
+                                            text.Add(obj.Properties["text" + i.ToString()]);
+                                        }
+                                    }
+                                    TileLayer[(int)obj.X / 32, (int)obj.Y / 32] = new TileSign(newRoom, text, (int)obj.X / 32, (int)obj.Y / 32, TileType.readable);
                                     break;
                             }
                             

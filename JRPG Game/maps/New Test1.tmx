@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" nextobjectid="24">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" nextobjectid="26">
  <tileset firstgid="1" name="World Tiles" tilewidth="32" tileheight="32" tilecount="171" columns="9">
   <image source="../tilesheets/World Tiles.png" width="288" height="608"/>
   <tile id="54">
@@ -13,6 +13,12 @@
  </tileset>
  <tileset firstgid="172" name="Objects" tilewidth="32" tileheight="32" tilecount="4" columns="4">
   <image source="../tilesheets/Objects.png" width="128" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="Type" value="Readable"/>
+    <property name="text" value="Welcome to my Game!  Enter here to continue "/>
+   </properties>
+  </tile>
  </tileset>
  <layer name="Ground" width="10" height="10">
   <properties>
@@ -139,11 +145,11 @@
    <tile gid="55"/>
    <tile gid="55"/>
    <tile gid="0"/>
-   <tile gid="172"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="172"/>
+   <tile gid="0"/>
+   <tile gid="172"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="55"/>
@@ -236,6 +242,13 @@
     <property name="X" value="1"/>
     <property name="Y" value="1"/>
     <property name="room" value="New Test2"/>
+   </properties>
+  </object>
+  <object id="25" x="96" y="32" width="32" height="32">
+   <properties>
+    <property name="Type" value="Readable"/>
+    <property name="text0" value="Welcome to my game! Its still in early stages"/>
+    <property name="text1" value="This is a test for the second page"/>
    </properties>
   </object>
  </objectgroup>

@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using JRPG_Game.GUI_Objects;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
@@ -28,7 +29,7 @@ namespace JRPG_Game {
         float keyRepeatTime;
         float seconds;
         const float keyRepeatDelay = 0.35f;
-
+        bool canMove;
 
         public Character(Texture2D texture, Room room, int x, int y)
             :base (texture,room,x,y)
@@ -42,9 +43,10 @@ namespace JRPG_Game {
             InputHandler.RegisterKey(Keys.Up, moveUp);
             InputHandler.RegisterKey(Keys.Down, moveDown);
             InputHandler.RegisterKey(Keys.Enter, InspectInFront);
+            canMove = true;
         }
         void KeyPressedDelay(Keys key, int xMove, int yMove) {
-
+            if (!canMove) return;
             if (!CheckCollision(X + xMove, Y + yMove)) {
                 if (InputHandler.KeyPressed(key) || keyRepeatTime < 0) {
                     keyRepeatTime = keyRepeatDelay;
@@ -92,10 +94,24 @@ namespace JRPG_Game {
             }
             Inspected = (TileSign)Room.TileLayers["Events"].TileLayout[newX,newY];
             if (Inspected != null)
-            if (Inspected.TileType == TileType.readable) {
-                Inspected.LookAt();
-            }
-        }
+                if (Inspected.TileType == TileType.readable) {
+                    if (GUIManager.currentConversation == null) {
+                        Inspected.LookAt();
+                        canMove = false;
+                    }
+                    else {
+                        var conv = GUIManager.currentConversation;
+                        if (conv.convNo >= conv.Text.Count - 1) {
+                            conv = null;
+                            canMove = true;
+                        }
+                        else {
+                            conv.NextTextBox();
+                        }
+                        GUIManager.currentConversation = conv;
+                    }
+                }
+             }
 
         public void moveLeft() {
             Direction = EDirection.West;

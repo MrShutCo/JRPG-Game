@@ -63,7 +63,6 @@ namespace JRPG_Game {
             foreach (GameObject go in GameObjects) {
                 go.Draw(spriteBatch);
             }
-            
         }
 
         public void Update(GameTime gameTime) {

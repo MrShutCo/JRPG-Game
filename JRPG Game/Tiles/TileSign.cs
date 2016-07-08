@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using JRPG_Game.GUI_Objects;
+using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,16 +9,20 @@ using System.Threading.Tasks;
 namespace JRPG_Game {
     public class TileSign : Tile {
 
-        public string ReadableText;
-
-        public TileSign(Room room, string text, int x, int y, TileType tileType)
+        public List<string> ReadableText;
+        public TileSign(Room room, List<string> text, int x, int y, TileType tileType)
             :base(room, x, y, tileType){
             ReadableText = text;
         }
 
         public void LookAt() {
-            DialogueBox diaBox = new DialogueBox(TexturePool.GetTexture("dialogue"), new Vector2(0,0), true, ReadableText);
-            GUIManager.GUIObjects["dialogue"] = diaBox;
+            //TODO: Change reading of text to either multiple textboxes, or XML reading
+            List<DialogueBox> dia = new List<DialogueBox>();
+            foreach(string s in ReadableText) {
+                dia.Add(new DialogueBox(s));
+            }
+            Conversation conv = new Conversation(dia);
+            GUIManager.currentConversation = conv;
         }
 
     }

@@ -12,13 +12,13 @@ namespace JRPG_Game {
 
         public string Text;
 
-        public DialogueBox(Texture2D texture, Vector2 position, bool isShowing, string text)
-            : base(texture,position,isShowing) { 
+        public DialogueBox(string text) { 
             Text = text;
+            Position = new Vector2(0, 0);
         }
 
         public override void Draw(SpriteBatch spriteBatch) {
-            spriteBatch.Draw(Texture, Position, Color.White);
+            spriteBatch.Draw(TexturePool.GetTexture("dialogue"), Position, Color.White);
             spriteBatch.DrawString(TexturePool.GetFont("dialogue_font"), Text, new Vector2(20, 20), Color.Black);
         }
 
