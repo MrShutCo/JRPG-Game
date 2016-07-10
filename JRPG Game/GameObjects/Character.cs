@@ -43,11 +43,9 @@ namespace JRPG_Game {
             InputHandler.RegisterKey(Keys.Up, moveUp);
             InputHandler.RegisterKey(Keys.Down, moveDown);
             InputHandler.RegisterKey(Keys.Enter, InspectInFront);
+            Camera.Pos = new Vector2(X * Room.TilePixelSize, Y * Room.TilePixelSize);
             canMove = true;
-
         }
-
-        
 
         void KeyPressedDelay(Keys key, int xMove, int yMove) {
             if (!canMove) return;

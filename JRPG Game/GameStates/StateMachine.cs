@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace JRPG_Game.GameStates {
-    class StateMachine {
+    class StateManager {
 
         public StateStack stateStack { get; set; }
 

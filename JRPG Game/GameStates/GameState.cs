@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using JRPG_Game.GUI_Objects;
+using JRPG_Game.Managers;
 
 namespace JRPG_Game.GameStates {
     class GameState : IState {
@@ -15,9 +17,11 @@ namespace JRPG_Game.GameStates {
         public void OnEnter() {
             MapIO.ReadMapsFolder();
             RoomManager.SetRoom("New Test1");
-            RoomManager.CurrentRoom.Character = new Character(TexturePool.GetTexture("robot_l"), RoomManager.CurrentRoom, 2, 2);
-            Camera.Pos = new Vector2(128,128);
-            
+            RoomManager.CurrentRoom.Character = new Character(TexturePool.GetTexture("robot_l"), RoomManager.CurrentRoom, 4, 8);
+            StatManager.Stats = new Stat("MrShutCo", 100, 50, 10, 7, 5, 0, 0);
+            Camera.Pos = new Vector2(RoomManager.CurrentRoom.Character.X * 32, RoomManager.CurrentRoom.Character.Y * 32);
+            StatViewer CarStat = new StatViewer();
+            GUIManager.GUIObjects["stats"] = CarStat;
         }
 
         public void OnExit() {

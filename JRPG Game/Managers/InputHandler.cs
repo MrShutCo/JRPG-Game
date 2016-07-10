@@ -14,6 +14,12 @@ namespace JRPG_Game {
          KeyboardState keyboardState;
          KeyboardState previousKeyboardState;
 
+        public InputHandler() {
+            keyboardState = Keyboard.GetState();
+            previousKeyboardState = Keyboard.GetState();
+
+        }
+
         public  bool KeyPressed(Keys key) {
             return (keyboardState.IsKeyDown(key) && previousKeyboardState.IsKeyUp(key));
         }

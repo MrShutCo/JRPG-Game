@@ -62,30 +62,25 @@
    <tile gid="10"/>
    <tile gid="10"/>
    <tile gid="10"/>
-   <tile gid="0"/>
-   <tile gid="10"/>
-   <tile gid="0"/>
-   <tile gid="10"/>
-   <tile gid="10"/>
-   <tile gid="10"/>
-   <tile gid="10"/>
-   <tile gid="10"/>
-   <tile gid="10"/>
-   <tile gid="10"/>
-   <tile gid="0"/>
-   <tile gid="10"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="10"/>
-   <tile gid="10"/>
-   <tile gid="10"/>
    <tile gid="10"/>
    <tile gid="10"/>
    <tile gid="0"/>
    <tile gid="10"/>
    <tile gid="10"/>
    <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
    <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
    <tile gid="10"/>
    <tile gid="10"/>
    <tile gid="10"/>
@@ -94,12 +89,17 @@
    <tile gid="10"/>
    <tile gid="10"/>
    <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="10"/>
    <tile gid="10"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
    <tile gid="10"/>
    <tile gid="10"/>
    <tile gid="10"/>
@@ -170,7 +170,17 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="118"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="55"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="55"/>
    <tile gid="55"/>
@@ -180,16 +190,6 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="118"/>
-   <tile gid="0"/>
-   <tile gid="55"/>
-   <tile gid="55"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="118"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="55"/>
@@ -198,7 +198,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="118"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -206,8 +206,8 @@
    <tile gid="55"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="118"/>
-   <tile gid="118"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -239,8 +239,8 @@
   <object id="18" x="128" y="0" width="32" height="32">
    <properties>
     <property name="Type" value="Teleporter"/>
-    <property name="X" value="1"/>
-    <property name="Y" value="1"/>
+    <property name="X" value="4"/>
+    <property name="Y" value="9"/>
     <property name="room" value="New Test2"/>
    </properties>
   </object>
