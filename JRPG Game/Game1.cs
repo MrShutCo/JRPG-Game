@@ -43,12 +43,11 @@ namespace JRPG_Game {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            int xCount, yCount;
-
             TexturePool.AddTexture("menuscreen", Content.Load<Texture2D>("mainmenu"));
             TexturePool.AddTexture("button", Content.Load<Texture2D>("button"));
 
             TexturePool.AddTexture("dialogue", Content.Load<Texture2D>("DialogueBox"));
+            TexturePool.AddTexture("select", Content.Load<Texture2D>("Selector"));
 
             TexturePool.AddFont("dialogue_font", Content.Load<SpriteFont>("Main Font"));
 
@@ -56,6 +55,7 @@ namespace JRPG_Game {
             TexturePool.AddTexture("robot_r", Content.Load<Texture2D>("robot_r"));
             TexturePool.AddTexture("robot_u", Content.Load<Texture2D>("robot_u"));
             TexturePool.AddTexture("robot_d", Content.Load<Texture2D>("robot_d"));
+
             //ReadTileSheets();
             TexturePool.AddTileSheet("World Tiles",new TileSheet(GraphicsDevice, Content.Load<Texture2D>("World Tiles"),32,32));
             TexturePool.AddTileSheet("Objects", new TileSheet(GraphicsDevice, Content.Load<Texture2D>("Objects"), 32, 32));

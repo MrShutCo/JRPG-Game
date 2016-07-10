@@ -44,7 +44,11 @@ namespace JRPG_Game {
             InputHandler.RegisterKey(Keys.Down, moveDown);
             InputHandler.RegisterKey(Keys.Enter, InspectInFront);
             canMove = true;
+
         }
+
+        
+
         void KeyPressedDelay(Keys key, int xMove, int yMove) {
             if (!canMove) return;
             if (!CheckCollision(X + xMove, Y + yMove)) {

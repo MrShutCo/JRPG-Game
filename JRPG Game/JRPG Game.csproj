@@ -53,6 +53,8 @@
     <Compile Include="GameStates\StateMachine.cs" />
     <Compile Include="GameStates\StateStack.cs" />
     <Compile Include="GUI Objects\GUIObject.cs" />
+    <Compile Include="GUI Objects\Select.cs" />
+    <Compile Include="GUI Objects\SelectBox.cs" />
     <Compile Include="Managers\GUIManager.cs" />
     <Compile Include="Managers\InputHandler.cs" />
     <Compile Include="MapIO.cs" />
