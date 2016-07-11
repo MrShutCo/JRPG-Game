@@ -10,7 +10,7 @@ namespace JRPG_Game.GameStates {
     public class StateStack {
 
         Dictionary<string, IState> mStates = new Dictionary<string, IState>();
-        Queue<IState> mStack = new Queue<IState>();
+        Stack<IState> mStack = new Stack<IState>();
 
         public void Update(GameTime gameTime) {
             IState top = mStack.First();
@@ -29,13 +29,13 @@ namespace JRPG_Game.GameStates {
 
         public void Push(String name) {
             IState state = mStates[name];
-            mStack.Enqueue(state);
+            mStack.Push(state);
             state.OnEnter();
         }
 
         public IState Pop() {
             mStack.First().OnExit();
-            return mStack.Dequeue();
+            return mStack.Pop();
         }
 
     }

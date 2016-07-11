@@ -41,8 +41,13 @@ namespace JRPG_Game.GUI_Objects {
 
         public void Draw(SpriteBatch spriteBatch) {
             foreach (Select s in Options) {
+                if (s != currSelect)
                 s.Draw(spriteBatch);
-                spriteBatch.Draw(currSelect.Texture, currSelect.Position, Color.Red);
+                else {
+                    spriteBatch.Draw(currSelect.Texture, currSelect.Position, Color.Red);
+                }
+                
+                spriteBatch.DrawString(TexturePool.GetFont("dialogue_font"), s.Name, s.Position + new Vector2(30, 7), Color.Black);
             }
             spriteBatch.DrawString(TexturePool.GetFont("dialogue_font"), currSelect.Name, new Vector2(0, 0), Color.Black);
         }

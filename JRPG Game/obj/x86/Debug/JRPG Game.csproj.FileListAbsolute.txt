@@ -113,3 +113,6 @@ C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Wind
 C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\World Tiles.xnb
 C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\TiledSharp.dll
 C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\Selector.xnb
+C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\Water.xnb
+C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\New Wall.xnb
+C:\Users\Tyer\Documents\Visual Studio 2015\Projects\JRPG Game\JRPG Game\bin\Windows\x86\Debug\Content\Enemy.xnb

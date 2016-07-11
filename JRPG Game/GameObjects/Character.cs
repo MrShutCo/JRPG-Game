@@ -47,6 +47,7 @@ namespace JRPG_Game {
             canMove = true;
         }
 
+
         void KeyPressedDelay(Keys key, int xMove, int yMove) {
             if (!canMove) return;
             if (!CheckCollision(X + xMove, Y + yMove)) {

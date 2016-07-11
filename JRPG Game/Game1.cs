@@ -1,4 +1,5 @@
 ﻿using JRPG_Game.GameStates;
+using JRPG_Game.GameStates.Menu;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -31,7 +32,8 @@ namespace JRPG_Game {
             // TODO: Add your initialization logic here
             gGameMode.Add("mainmenu", new MainMenuState());
             gGameMode.Add("gamestate", new GameState());
-
+            gGameMode.Add("menu", new MenuState());
+            gGameMode.Add("itemmenu", new ItemMenuState());
             base.Initialize();
         }
 
@@ -43,11 +45,18 @@ namespace JRPG_Game {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            //TODO: Make this more streamlined, and less manual
+
             TexturePool.AddTexture("menuscreen", Content.Load<Texture2D>("mainmenu"));
             TexturePool.AddTexture("button", Content.Load<Texture2D>("button"));
 
             TexturePool.AddTexture("dialogue", Content.Load<Texture2D>("DialogueBox"));
             TexturePool.AddTexture("select", Content.Load<Texture2D>("Selector"));
+
+            TexturePool.AddTexture("itemSlot", Content.Load<Texture2D>("New Wall"));
+            TexturePool.AddTexture("testItem", Content.Load<Texture2D>("Enemy"));
+
+            //TexturePool.AddTexture("testItem", Content.Load<Texture2D>("Water"));
 
             TexturePool.AddFont("dialogue_font", Content.Load<SpriteFont>("Main Font"));
 
@@ -60,8 +69,9 @@ namespace JRPG_Game {
             TexturePool.AddTileSheet("World Tiles",new TileSheet(GraphicsDevice, Content.Load<Texture2D>("World Tiles"),32,32));
             TexturePool.AddTileSheet("Objects", new TileSheet(GraphicsDevice, Content.Load<Texture2D>("Objects"), 32, 32));
 
-            gGameMode.Push("mainmenu");
             gGameMode.Push("gamestate");
+            gGameMode.Push("mainmenu");
+            
 
             // TODO: use this.Content to load your game content here
         }

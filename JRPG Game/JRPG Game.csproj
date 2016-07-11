@@ -43,6 +43,8 @@
     <Compile Include="GameObjects\Camera.cs" />
     <Compile Include="GameObjects\Character.cs" />
     <Compile Include="GameStates\BattleState.cs" />
+    <Compile Include="GameStates\Menu\ItemMenuState.cs" />
+    <Compile Include="GameStates\Menu\MenuState.cs" />
     <Compile Include="GUI Objects\Conversation.cs" />
     <Compile Include="GUI Objects\DialogueBox.cs" />
     <Compile Include="Game1.cs" />
@@ -56,6 +58,7 @@
     <Compile Include="GUI Objects\Select.cs" />
     <Compile Include="GUI Objects\SelectBox.cs" />
     <Compile Include="GUI Objects\StatViewer.cs" />
+    <Compile Include="Inventory\Item.cs" />
     <Compile Include="Managers\GUIManager.cs" />
     <Compile Include="Managers\InputHandler.cs" />
     <Compile Include="Managers\StatManager.cs" />

@@ -29,7 +29,7 @@ namespace JRPG_Game.GUI_Objects {
 
         internal void Draw(SpriteBatch spriteBatch) {
             spriteBatch.Draw(Texture, Position, Color.White);
-            spriteBatch.DrawString(TexturePool.GetFont("dialogue_font"), Name, Position + new Vector2(30, 7), Color.Black);
+            
         }
 
     }
