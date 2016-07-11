@@ -9,27 +9,27 @@ namespace JRPG_Game.Managers {
     public static class StatManager {
 
         public static Stat Stats;
-        public static List<Item> Inventory = new List<Item>();
+        public static CharInventory Inventory = new CharInventory();
 
-        public static Item getItem(string name) {
-            return Inventory.Single(item => item.Name == name);
-        }
+        //public static Item getItem(string name) {
+        //    return Inventory.Single(item => item.Name == name);
+        //}
 
         #region Tests
 
         public static void FillInventory(int size) {
-            for (int x = 0; x < size; x++)
-                Inventory.Add(new Item(TexturePool.GetTexture("testItem"), "test"));
+            Inventory.AddItem(new Item(TexturePool.GetTexture("testItem"), "test"), size);
         }
+
 
         #endregion
 
         //TODO: Make sure this actually works
-        public static Item[,] getItemGrid(int width, int height) {
-            Item[,] itemGrid = new Item[width, height];
+        public static ItemStack[,] getItemGrid(int width, int height) {
+            ItemStack[,] itemGrid = new ItemStack[width, height];
             int x = 0;
             int y = 0;
-            foreach(Item i in Inventory) {
+            foreach(ItemStack i in Inventory.Items) {
                 if (x >= width) {
                     x = 0;
                     y++;

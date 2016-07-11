@@ -12,6 +12,7 @@ namespace JRPG_Game.Inventory {
         public Texture2D itemImage;
         public string Info;
         public string Name;
+        public int itemID;
 
         public Item(Texture2D texture, string name) {
             itemImage = texture;

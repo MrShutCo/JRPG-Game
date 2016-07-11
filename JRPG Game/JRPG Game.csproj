@@ -58,7 +58,9 @@
     <Compile Include="GUI Objects\Select.cs" />
     <Compile Include="GUI Objects\SelectBox.cs" />
     <Compile Include="GUI Objects\StatViewer.cs" />
+    <Compile Include="Inventory\CharInventory.cs" />
     <Compile Include="Inventory\Item.cs" />
+    <Compile Include="Inventory\ItemStack.cs" />
     <Compile Include="Managers\GUIManager.cs" />
     <Compile Include="Managers\InputHandler.cs" />
     <Compile Include="Managers\StatManager.cs" />
